@@ -20,9 +20,11 @@ input {
   width: 100%;
   margin: 0.4em;
   min-height: 1.8em;
+  padding: 0.3em;
+  background: none;
 }
 button{
-  padding: 0.3em;
+  padding: 0.5em;
   background-color: white;
   border-radius: 0.3em;
 }
