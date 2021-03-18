@@ -1,0 +1,32 @@
+#bodyContainer{
+  height: 85%;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+}
+#leftMenu{
+  padding: 2em;
+  flex-basis: 20%;
+  height: 85%;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+#background{
+  padding: 2em;
+  flex-basis: 80%;
+  height: 85%;
+}
+#backgroundContent{
+  height: 100%;
+}
+#leftMenu ul{
+  list-style: none;
+  padding: 3vh;
+  margin: 0;
+}
+#leftMenu ul:hover{
+  background-color: var(--hovered-color);
+}
