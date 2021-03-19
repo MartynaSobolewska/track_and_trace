@@ -1,3 +1,5 @@
-<?php 
-pre_r($_POST);
-?>
+<html>
+  <?php 
+  print_r($_POST);
+  ?>
+</html>

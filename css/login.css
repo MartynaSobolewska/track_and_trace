@@ -33,6 +33,10 @@ input::-webkit-input-placeholder{
 .rowButton{
   width: 100%;
 }
+#errorMessage{
+  color: red;
+  font-weight: bold;
+}
 #register{
   margin-top: 8.6em;
   width: 100%;

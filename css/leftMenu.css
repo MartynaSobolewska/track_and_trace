@@ -5,9 +5,9 @@
   display: flex;
 }
 #leftMenu{
-  padding: 2em;
+  padding-bottom: 2em;
   flex-basis: 20%;
-  height: 85%;
+  height: 95%;
   background-color: var(--main-color);
   display: flex;
   flex-direction: column;
@@ -28,5 +28,12 @@
   margin: 0;
 }
 #leftMenu ul:hover{
+  background-color: var(--hovered-color);
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#checked{
   background-color: var(--hovered-color);
 }

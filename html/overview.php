@@ -1,3 +1,6 @@
+<?php 
+  include_once '../php/database.php';
+?>
 <html lang="en">
 <head>
   <link rel="stylesheet" href="../css/home.css">
@@ -16,8 +19,8 @@
     <div id="bodyContainer">
       <div id="leftMenu">
         <li id="menu">
-          <a href="../html/home.html"><ul id = "checked">Home</ul></a>
-          <a href="../html/overview.php"><ul>Overview</ul></a>
+          <a href="../html/home.html"><ul>Home</ul></a>
+          <a href="../html/overview.html"><ul id = "checked">Overview</ul></a>
           <a href="../html/addVisit.html"><ul>Add Visit</ul></a>
           <a href="../html/report.html"><ul>Report</ul></a>
           <a href="../html/settings.html"><ul>Settings</ul></a>
@@ -27,18 +30,17 @@
       <div id="background">
         <img src="../resources/watermark.png" alt="virus" id= "backgroundImg">
         <div id="backgroundContent">
-          <div id="header2">
-            <h2>
-              Status
-            </h2>
-          </div>
-          <div id="mapAndText">
-            <div id="text">
-              <p>Hi "name", you might have had a connection to an infected person at the location shown in red.</p>
-              <p>Click on the marker to see details about the infection.</p>
-            </div>
-            <map name="Exeter"><img src="../resources/exeter.jpg" alt="exeter" id="mapImg"></map>
-          </div>
+          <?php
+            $sql = "SELECT * FROM users;";
+            $result = mysqli_query($conn, $sql);
+            $resultCheck = mysqli_num_rows($result);
+
+            if ($resultCheck > 0){
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo $row['username'] . "<br>";
+              }
+            }
+          ?>
         </div>
       </div>
     </div>
