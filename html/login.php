@@ -1,3 +1,6 @@
+<?php 
+  include_once '../php/database.php';
+?>
 <html lang="en">
 <head>
   <link rel="stylesheet" href="../css/main.css">
@@ -14,19 +17,17 @@
     </div>
     <div id="background">
       <img src="../resources/watermark.png" alt="virus" id = "backgroundImg">
-      <form action="../php/login_form.php" method="post" class="form">
+      <form action="../php/login_form.php" method="POST" class="form">
         <div id="inputs">
-          <input type="text" name="usrname" id="usrname" placeholder="Username"><br>
-          <input type="password" name="pswrd" id="pswrd" placeholder="Password">
+          <input type="text" name="username" id="username" placeholder="Username"><br>
+          <input type="password" name="pwd" id="pwd" placeholder="Password">
         </div>
         <div id="buttons">
           <div id="buttonRow">
-            <a href="../html/home.html"><button class="rowButton">Login</button></a>
-            <a href="../html/home.html"><button class="rowButton">Cancel</button></a>
+            <button class="rowButton" type="submit" name = "login">Login</button>
+            <a href="../html/home.php"><button class="rowButton">Cancel</button></a>
           </div>
-          <a href="../html/register.html">
-            <button id="register">Register</button>
-          </a>
+          <button id="register"name = "register"formaction="register.php">Register</button>
         </div>
       </form>
     </div>

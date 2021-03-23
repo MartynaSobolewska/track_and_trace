@@ -1,0 +1,8 @@
+CREATE TABLE infectedlocations (
+  id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	x INT(5) NOT NULL,
+  y INT(5) NOT NULL,
+  d DATE NOT NULL,
+  t TIME NOT NULL,
+  duration INT(10) NOT NULL
+);

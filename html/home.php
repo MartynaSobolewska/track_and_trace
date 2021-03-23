@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  include_once("../php/database.php");
+?>
 <html lang="en">
 <head>
   <link rel="stylesheet" href="../css/home.css">
@@ -9,6 +13,11 @@
   <title>Contact Tracing Login</title>
 </head>
 <body>
+  <?php
+    // if(!isset($_SESSION['userId'])){
+    //   header("Location: ../html/login.php");
+    // }
+  ?>
   <div class="container">
     <div id="header">
       <h1 id="title">COVID - 19 Contact Tracing</h1>
@@ -18,7 +27,7 @@
         <li id="menu">
           <a href="../html/home.html"><ul id = "checked">Home</ul></a>
           <a href="../html/overview.php"><ul>Overview</ul></a>
-          <a href="../html/addVisit.html"><ul>Add Visit</ul></a>
+          <a href="../html/add_visit.php"><ul>Add Visit</ul></a>
           <a href="../html/report.html"><ul>Report</ul></a>
           <a href="../html/settings.html"><ul>Settings</ul></a>
         </li>

@@ -6,16 +6,16 @@
 }
 #text{
   margin: 2vh;
-  width: 33%;
+  width: 100%;
   height: 100%;
-  flex-basis: 33%;
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 map {
-  flex-basis: 67%;
+  flex-basis: 60%;
   margin-left: auto;
   margin-right: auto;
 }

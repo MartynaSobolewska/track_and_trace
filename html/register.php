@@ -1,5 +1,6 @@
 <?php 
   include_once '../php/database.php';
+  $username_err = "";
 ?>
 <html lang="en">
 <head>
@@ -49,14 +50,14 @@
     </div>
     <div id="background">
       <img src="../resources/watermark.png" alt="virus" id = "backgroundImg">
-      <form action="../php/new_user.php" id = "registerForm" class = "form" method = "POST" onsubmit="return checkForBlank()">
+      <form action = "../php/new_user.inc.php" id = "registerForm" class = "form" method = "POST" onsubmit="return checkForBlank()">
         <div id="inputs">
           <input type="text" name="name" placeholder="Name" id="nameInput">
           <input type="text" name="surname" placeholder="Surname" id="surnameInput">
           <input type="text" name="username" placeholder="Username" id="usernameInput">
           <input type="password" name="pwd" placeholder="Password"id="pwdInput">
         </div>
-        <p id = errorMessage></p>
+        <p id = errorMessage><?php echo $username_err?></p>
         <button id="register" type="submit" name = "submit">Register</button>
       </form>
     </div>

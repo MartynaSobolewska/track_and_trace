@@ -1,0 +1,28 @@
+.crossImg{
+  width: 50px;
+  height: 5px;
+}
+#overviewTable{
+  display: flex;
+  justify-content:space-between;
+  width: 70vw;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 6vw 0;
+}
+thead, tbody { 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  display: block; 
+}
+
+tbody {
+  overflow-y: auto;    /* Trigger vertical scroll    */
+  overflow-x: hidden;
+}
+
+#backgroundContent{
+  display: flex;
+  justify-content: center;
+}

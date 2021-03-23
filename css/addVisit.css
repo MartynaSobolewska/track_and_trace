@@ -1,0 +1,15 @@
+.buttonsBox{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+.buttonsBox button{
+  margin: 0.1em;
+  width: 75%;
+  padding: 0.3em;
+}
+.topButton{
+  border-radius: 0;
+}
